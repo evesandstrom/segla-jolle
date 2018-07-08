@@ -53,17 +53,7 @@ body {
 }
 .container {
   background-color: #E4E3E6;
-  margin: 0 auto;
-  overflow: auto;
-}
-
-header, nav, article, section, aside, figure, form, footer {
-  padding: 1em;
-  box-sizing: border-box;
   font-family: 'Montserrat', sans-serif;
-  width: 100%;
-  float: left;
-  margin: 4px 0;
 }
 
 footer, footer p {
@@ -91,8 +81,3 @@ a:visited {
 a:hover, a:active {
   text-decoration: underline;
 }
-
-/* Grid system
-  < 600
-  600 > < 900
-  > 900      */
