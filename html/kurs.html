@@ -1,11 +1,132 @@
+<!DOCTYPE html>
+
 <html lang="sv">
 
   <head>
-    <title>Segla Jolle</title>
+    <title>Segla Kölbåt</title>
     <meta charset="UTF-8" />
+    <link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
   </head>
 
   <body>
+
+    <div class="container">
+      <header>
+        <img src="../img/alin-meceanu-830-unsplash-large.jpg" alt="En segelbåt i havet. I bakgrunden höga klippor med skog och himmel. Photo by Alin Meceanu on Unsplash" height="525" width="1202" />
+        <h1>Seglar kurser</h1>
+        <h2>Lär dig segla kölbåt</h2>
+      </header>
+
+      <nav>
+        <ul>
+          <li><a href="#">Hem</a></li>
+          <li><a href="#">Kölbåt</a></li>
+          <li><a href="#">Kurser</a></li>
+          <li><a href="#">Om Oss</a></li>
+        </ul>
+      </nav>
+
+      <section>
+        <h2>Våra Kurser</h2>
+        <p>Vi erbjuder kurser på vardagar och helger, för nybörjare och lite mer kunniga!</p>
+        <p>Våra Grundkurser finns i 5 dagar eller 4 dagar. En 5 dagars kurs ges från Mån-Fre och en helgkurs ges på två tillfällen Lör-Sön.
+          En grundkurs passar nybörjaren med lite eller ingen erfarenhet inom segling innan kursen.</p>
+        <p>Våran fortsättningskurs ges på en helg från Lör-Sön. Den är till för de som redan har seglat men som vill ha mer kunskap och
+          kännsa sig säkrare i sin egen segelbåt eller för de som gått våran grundkurs och vill lära sig mer.</p>
+        <p>I alla kurser ingår sovplats och mat för kursdagarna, teoribok och lån av flytväst.</p>
+      </section>
+
+      <figure>
+        <table>
+          <thead>
+            <tr>
+              <th>Antal dagar</th>
+              <th>Vardag/Helg</th>
+              <th>Nivå</th>
+              <th>Max deltagare</th>
+              <th>Pris</th>
+            </tr>
+          </thead>
+          <tfoot>
+            <tr>
+              <th>Antal dagar</th>
+              <th>Vardag/Helg</th>
+              <th>Nivå</th>
+              <th>Max deltagare</th>
+              <th>Pris</th>
+            </tr>
+          </tfoot>
+          <tbody>
+            <tr>
+              <td>5 dagar</td>
+              <td>Vardag</td>
+              <td>Grundnivå</td>
+              <td>6st</td>
+              <td>8349 kr</td>
+            </tr>
+            <tr>
+              <td>4 dagar</td>
+              <td>Helg x2</td>
+              <td>Grundnivå</td>
+              <td>6st</td>
+              <td>6679 kr</td>
+            </tr>
+            <tr>
+              <td>2 dagar</td>
+              <td>Helg</td>
+              <td>Fortsättning</td>
+              <td>6st</td>
+              <td>3339 kr</td>
+            </tr>
+          </tbody>
+        </table>
+      </figure>
+
+      <form action="#" method="post">
+        <h2>Boka kurs</h2>
+        <fieldset>
+          <p>
+            <label for="firstname">Förnamn</label>
+            <input type="text" id="firstname" name="fname" size="30" maxlength="30" />
+          </p>
+          <p>
+            <label for="lastname">Efternamn</label>
+            <input type="text" id="lastname" name="lname" size="30" maxlength="30" />
+          </p>
+          <p>
+            <label for="email">E-post</label>
+            <input type="email" id="email" name="email" size="30" maxlength="30" />
+          </p>
+          <p>
+            <label for="telNo">Telefon nr</label>
+            <input type="tel" id="telNo" name="telNo" size="30" maxlength="30" />
+          </p>
+          <p>
+            <label for="course">Kurs</label>
+            <select id="course" name="course" size="2">
+              <option value="5 dagar">5 dagar</option>
+              <option value="4 dagar">4 dagar</option>
+              <option value="2 dagar">2 dagar</option>
+            </select>
+          </p>
+          <p>
+            <label for="date">Datum</label>
+            <input type="datetime-local" id="date" name="date" />
+          </p>
+          <p>
+            <label for="comment">Övrig kommentar</label>
+            <textarea id="comment" name="comment" placeholder="Övrigt, Matpreferenser.." cols="30" rows="5"></textarea>
+          </p>
+          <p>
+            <input type="submit" value="Skicka" id="submit" name="submit" />
+          </p>
+        </fieldset>
+      </form>
+
+      <footer>
+        <p> 070 - xxx xx xx, seglarkurser@domain.se, Segelgatan 33 </p>
+      </footer>
+    </div>
 
   </body>
 
