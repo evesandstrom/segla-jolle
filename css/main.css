@@ -47,7 +47,7 @@ table {
 	border-spacing: 0;
 }
 
-/* Allmän styling */
+/* Allmän styling, fonts, color, background-color */
 body {
   font-size: 16px;
 }
@@ -70,6 +70,7 @@ p {
   color: #000000;
 }
 
+/* Länkar */
 a {
   text-decoration: none;
   color: #00C5CC;
@@ -81,3 +82,68 @@ a:visited {
 a:hover, a:active {
   text-decoration: underline;
 }
+
+/* Tabeller */
+table, th, td {
+	border: 2px groove;
+	padding: 5px;
+}
+th {
+	height: 2em;
+	vertical-align: middle;
+	background-color: #00808F;
+  color: #E4E3E6;
+}
+tr:nth-child(even) {
+	background-color: #ffffff;
+}
+
+/* Formulär */
+fieldset {
+	background-color: #ffffff;
+	padding: 5px;
+	border: 2px groove;
+}
+
+form p {
+	padding: 5px;
+}
+
+input, textarea, select {
+	border: none;
+	background-color: #E4E3E6;
+	padding: 8px;
+	outline: none;
+	box-sizing: border-box;
+}
+
+input:hover, textarea:hover, select:hover {
+	border: 2px solid #00808F;
+}
+
+input:focus, textarea:focus, select:focus {
+	border: 2px solid #00808F;
+}
+
+#submit {
+	border-radius: 13px;
+}
+
+#submit:hover {
+	background-color: #00808F;
+	color: #E4E3E6;
+}
+
+label {
+	display: block;
+	padding: 2px;
+}
+
+/* > 600px Mobile */
+@media (max-width: 600px) {
+
+}
+
+/* < 600 & > 900px Tablet */
+/* < 900px & > 1200px Tablet Landscape / Small Desktop */
+/* < 1200px Desktop */
