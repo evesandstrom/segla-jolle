@@ -220,7 +220,7 @@ label {
 		content: "Pris";
 	}
 
-/* xs Form */
+/* xs Formulär */
 
 	input, textarea, select {
 		width: 100%;
@@ -230,8 +230,59 @@ label {
 	}
 }
 
-/* < 600 & > 900px Tablet */
+/* s < 600 & > 900px Tablet */
+@media (min-width: 601px) and (max-width: 900px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+	.s {
+		width: 100%;
+	}
+	p {
+		font-size: 16px;
+		margin: 0 0 16px 0;
+	}
+	h1 {
+		font-size: 34px;
+		margin: 0 0 16px 0;
+	}
+	h2 {
+		font-size: 21px;
+		margin: 0 0 16px 0;
+	}
 
+	header, footer {
+		text-align: center;
+	}
+
+	nav {
+		border-bottom: 2px solid #00808F;
+		margin-bottom: 16px;
+	}
+
+	nav li {
+		display: inline-block;
+		padding: 16px 16px 0 16px;
+	}
+
+	/* s Formulär */
+	fieldset {
+		width: 500px;
+	}
+	#pFirstname, #pLastname, #pEmail, #pTelNo, #pCourse, #pDate {
+		display: inline-block;
+	}
+	#pComment, #pSubmit {
+		display: block;
+	}
+	#date {
+		width: 10em;
+	}
+	#submit {
+		width: 8em;
+	}
+}
 
 /* < 900px & > 1200px Tablet Landscape / Small Desktop */
 /* < 1200px Desktop */
