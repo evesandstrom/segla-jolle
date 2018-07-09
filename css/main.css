@@ -56,6 +56,10 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+header, nav, footer, article, section, aside, figure, form {
+	padding: 1em;
+}
+
 footer, footer p {
   background-color: #00808F;
   color: #E4E3E6;
@@ -68,6 +72,10 @@ h1, h2, h3 {
 
 p {
   color: #000000;
+}
+
+img {
+	max-width: 100%;
 }
 
 /* Länkar */
@@ -141,7 +149,10 @@ label {
 
 /* > 600px Mobile */
 @media (max-width: 600px) {
-
+	.container {
+		display: flex;
+		border: 2px solid red;
+	}
 }
 
 /* < 600 & > 900px Tablet */
