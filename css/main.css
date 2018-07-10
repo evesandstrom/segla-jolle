@@ -205,7 +205,7 @@ label {
 	}
 
 	td:nth-of-type(1):before {
-		content: "Antal dagar";
+		content: "Kurser";
 	}
 	td:nth-of-type(2):before {
 		content: "Vardag/Helg";
@@ -240,7 +240,7 @@ label {
 		width: 100%;
 	}
 	p {
-		font-size: 16px;
+		font-size: 14px;
 		margin: 0 0 16px 0;
 	}
 	h1 {
@@ -268,7 +268,7 @@ label {
 
 	/* s Formulär */
 	fieldset {
-		width: 500px;
+		width: 440px;
 	}
 	#pFirstname, #pLastname, #pEmail, #pTelNo, #pCourse, #pDate {
 		display: inline-block;
@@ -285,4 +285,103 @@ label {
 }
 
 /* < 900px & > 1200px Tablet Landscape / Small Desktop */
+@media (min-width: 901px) and (max-width: 1199px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+	}
+	.m {
+		width: 100%;
+	}
+	p {
+		font-size: 16px;
+		margin: 0 0 16px 0;
+	}
+	h1 {
+		font-size: 34px;
+		margin: 0 0 16px 0;
+	}
+	h2 {
+		font-size: 21px;
+		margin: 0 0 16px 0;
+	}
+
+	header, footer {
+		text-align: center;
+	}
+
+	article.m, section.m, figure.m, aside.m, form.m {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	nav {
+		border-bottom: 2px solid #00808F;
+		margin-bottom: 16px;
+	}
+
+	nav li {
+		display: inline-block;
+		padding: 16px 16px 0 16px;
+	}
+
+	/* m Formulär */
+	fieldset {
+		width: 440px;
+	}
+	#pFirstname, #pLastname, #pEmail, #pTelNo, #pCourse, #pDate {
+		display: inline-block;
+	}
+	#pComment, #pSubmit {
+		display: block;
+	}
+}
+
 /* < 1200px Desktop */
+@media (min-width: 1200px) {
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+	}
+	p {
+		font-size: 16px;
+		margin: 0 0 16px 0;
+	}
+	h1 {
+		font-size: 48px;
+		margin: 0 0 16px 0;
+	}
+	h2 {
+		font-size: 32px;
+		margin: 0 0 16px 0;
+	}
+
+	header, footer {
+		text-align: center;
+	}
+
+	article.lg, section.lg, figure.lg, aside.lg, form.lg {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	nav {
+		border-bottom: 2px solid #00808F;
+		margin-bottom: 16px;
+	}
+
+	nav li {
+		display: inline-block;
+		padding: 16px 16px 0 16px;
+	}
+	/* lg Formulär */
+	fieldset {
+		width: 440px;
+	}
+	#pFirstname, #pLastname, #pEmail, #pTelNo, #pCourse, #pDate {
+		display: inline-block;
+	}
+	#pComment, #pSubmit {
+		display: block;
+	}
+}
