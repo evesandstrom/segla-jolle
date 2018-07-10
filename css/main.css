@@ -73,6 +73,7 @@ h1, h2, h3 {
 
 p {
   color: #000000;
+	line-height: 1.3em;
 }
 
 /* Används för att header bild ska resize automatiskt beroende på skärmbredd */
