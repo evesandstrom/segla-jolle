@@ -75,6 +75,7 @@ p {
   color: #000000;
 }
 
+/* Används för att header bild ska resize automatiskt beroende på skärmbredd */
 img {
 	max-width: 100%;
 	max-height: 100%;
@@ -135,6 +136,7 @@ input:focus, textarea:focus, select:focus {
 	border: 2px solid #00808F;
 }
 
+/* För att skicka knappen ska få en rundad kant */
 #submit {
 	border-radius: 13px;
 }
@@ -144,6 +146,7 @@ input:focus, textarea:focus, select:focus {
 	color: #E4E3E6;
 }
 
+/* Positionera labels över inputfields */
 label {
 	display: block;
 	padding: 2px;
@@ -158,6 +161,8 @@ label {
 	.xs {
 		width: 100%;
 	}
+
+	/* xs - paragrafer och rubriker */
 	p {
 		font-size: 13px;
 		margin: 0 0 13px 0;
@@ -171,6 +176,7 @@ label {
 		margin: 0 0 13px 0;
 	}
 
+	/* xs - header, footer och nav */
 	header, footer {
 		text-align: center;
 	}
@@ -180,22 +186,26 @@ label {
 		margin: 0 0 2px 0;
 	}
 
-/* xs Tabell - cred till: https://css-tricks.com/responsive-data-tables/ */
+  /* xs Tabell - cred till: https://css-tricks.com/responsive-data-tables/ */
+  /* Gör att tabellen beter sig som block element */
 	table, tr, th, td {
 		display: block;
 		border: none;
 	}
+  /* Ta bort table head */
 	th {
 		display: none;
 	}
 	tr {
 		width: 300px;
 	}
+	/* Positionera tabelldatan till höger */
 	td {
 		border-bottom: 2px groove lightgrey;
 		position: relative;
 		padding-left: 50%;
 	}
+	/* Gör plats för "table heads" till vänster */
 	td:before {
 		position: absolute;
 		top: 6px;
@@ -220,8 +230,7 @@ label {
 		content: "Pris";
 	}
 
-/* xs Formulär */
-
+	/* xs Formulär */
 	input, textarea, select {
 		width: 100%;
 	}
@@ -230,7 +239,7 @@ label {
 	}
 }
 
-/* s < 600 & > 900px Tablet */
+/* s 600 > < 900px Tablet */
 @media (min-width: 601px) and (max-width: 900px) {
 	.container {
 		display: flex;
@@ -239,6 +248,8 @@ label {
 	.s {
 		width: 100%;
 	}
+
+	/* s - paragrafer och rubriker */
 	p {
 		font-size: 14px;
 		margin: 0 0 16px 0;
@@ -252,6 +263,7 @@ label {
 		margin: 0 0 16px 0;
 	}
 
+	/* s - header, footer och nav */
 	header, footer {
 		text-align: center;
 	}
@@ -284,7 +296,7 @@ label {
 	}
 }
 
-/* < 900px & > 1200px Tablet Landscape / Small Desktop */
+/* m 900px > < 1200px Tablet Landscape / Small Desktop */
 @media (min-width: 901px) and (max-width: 1199px) {
 	.container {
 		display: flex;
@@ -293,6 +305,8 @@ label {
 	.m {
 		width: 100%;
 	}
+
+	/* m - paragrafer och rubriker */
 	p {
 		font-size: 16px;
 		margin: 0 0 16px 0;
@@ -306,6 +320,7 @@ label {
 		margin: 0 0 16px 0;
 	}
 
+	/* m - header, footer, content och nav */
 	header, footer {
 		text-align: center;
 	}
@@ -337,12 +352,14 @@ label {
 	}
 }
 
-/* < 1200px Desktop */
+/* lg > 1200px Desktop */
 @media (min-width: 1200px) {
 	.container {
 		max-width: 1200px;
 		margin: 0 auto;
 	}
+
+	/* lg - paragrafer och rubriker */
 	p {
 		font-size: 16px;
 		margin: 0 0 16px 0;
@@ -356,6 +373,7 @@ label {
 		margin: 0 0 16px 0;
 	}
 
+	/* lg - header, footer, content och nav */
 	header, footer {
 		text-align: center;
 	}
@@ -374,6 +392,7 @@ label {
 		display: inline-block;
 		padding: 16px 16px 0 16px;
 	}
+
 	/* lg Formulär */
 	fieldset {
 		width: 440px;
