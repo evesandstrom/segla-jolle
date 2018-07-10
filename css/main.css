@@ -127,9 +127,13 @@ input, textarea, select {
 	outline: none;
 	box-sizing: border-box;
 }
+select {
+	font-size: 14px;
+}
 
 input:hover, textarea:hover, select:hover {
-	border: 2px solid #00808F;
+	animation: .5s scaleUp;
+	animation-fill-mode: forwards;
 }
 
 input:focus, textarea:focus, select:focus {
@@ -150,6 +154,16 @@ input:focus, textarea:focus, select:focus {
 label {
 	display: block;
 	padding: 2px;
+}
+
+/* Animering som gör valt element lite större */
+@keyframes scaleUp {
+	from {
+		transform: scale(1);
+	}
+	to {
+		transform: scale(1.1);
+	}
 }
 
 /* xs > 600px Mobile */
